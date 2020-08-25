@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Position-Based Multi-Agent Dynamics for Real-Time Crowd Simulation</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+	#content {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	a:link {
+  text-decoration: none;
+}
+	@media screen and (min-width: 480px) {
+		#content {
+			margin-left: 120px;
+			margin-right: 120px;
+		}
+	}
+	</style>
+</head>
+
+<body class="w3-light-grey">
+	<div id="content" class="w3-white">
+	<a href="http://web.cs.ucla.edu/~tweiss/">
+		<header class="w3-container w3-teal">
+			<h1 id="home" class="w3-center">Home</h1>
+		</header>
+		</a>
+		<header>
+
+			<!--
+			<header class="w3-center w3-opacity w3-border-bottom" style="padding:70px 16px">
+				<h1 style="font-weight: bold;">Position-Based Multi-Agent Dynamics for Real-Time Crowd Simulation</h1>
+				<h1 class="w3-xlarge"><a class="w3-text-teal" href="tomerwei.github.io"> Tomer Weiss</a> , Alan Litteneker, Chenfanfu Jiang and Demetri Terzopoulos</h1>
+				<h4 class="w3-large" style="font-style:italic;"><a class="w3-text-teal" href="https://www.sciencedirect.com/science/article/pii/S0097849318301699"> Computers and Graphics , 2018</a></h4>
+			</header>
+		 -->
+
+			<header class="w3-center w3-opacity w3-border-bottom" style="padding:70px 16px">
+				<h1 style="font-weight: bold;">Position-Based Multi-Agent Dynamics for Real-Time Crowd Simulation</h1>
+				<h1 class="w3-xlarge"><a class="w3-text-teal" href="tomerwei.github.io"> Tomer Weiss</a> , Alan Litteneker, Chenfanfu Jiang and Demetri Terzopoulos</h1>
+				<h4 class="w3-large" style="font-style:italic;"><a class="w3-text-teal" href="https://dl.acm.org/citation.cfm?id=3136462"> ACM SIGGRAPH conference on Motion in Games, 2017</a></h4>
+				<h4 class="w3-large" style="font-style:italic;"><a class="w3-text-teal" href="https://dl.acm.org/citation.cfm?id=3108160"> ACM SIGGRAPH / Eurographics Symposium on Computer Animation (SCA), Extended Abstract, 2017 </a></h4>
+
+
+			</header>
+
+		</header>
+		<div id="abstract" class="w3-row">
+			<div class="w3-border-bottom">
+				<h1 class="w3-panel w3-center w3-opacity" style="font-weight: bold;"> Abstract </h1>
+				<p class="w3-panel">Exploiting the efficiency and stability of Position-Based Dynamics (PBD), we introduce a novel crowd simulation method that
+runs at interactive rates for hundreds of thousands of agents. Our
+method enables the detailed modeling of per-agent behavior in
+a Lagrangian formulation. We model short-range and long-range
+collision avoidance to simulate both sparse and dense crowds. On
+the particles representing agents, we formulate a set of positional
+constraints that can be readily integrated into a standard PBD solver.
+We augment the tentative particle motions with planning velocities to determine the preferred velocities of agents, and project the
+positions onto the constraint manifold to eliminate colliding congurations. The local short-range interaction is represented with
+collision and frictional contact between agents, as in the discrete
+simulation of granular materials. We incorporate a cohesion model
+for modeling collective behaviors and propose a new constraint for
+dealing with potential future collisions. Our new method is suitable
+for use in interactive games.</p>
+			</div>
+		</div>
+		<div id="images" class="w3-row">
+			<div class="w3-border-bottom">
+				<h1 class="w3-panel w3-center w3-opacity" style="font-weight: bold;"> Images </h1>
+				<div class="w3-row-padding">
+					<div class="w3-half"> <img src="images/position/teaser_image1.jpg" alt="Lights" class="w3-image" width="600" height="400"> <img src="images/position/teaser_image2.jpg" alt="Lights" class="w3-image" width="600" height="400"> </div>
+					<div class="w3-half" style="height=fit-content;"> <img src="images/position/teaser_image4.jpg" alt="Lights" class="w3-image" width="600" height="400"> </div>
+				</div>
+			</div>
+		</div>
+		<div id="demo-vid" class="w3-row">
+			<div class="w3-border-bottom">
+				<h1 class="w3-panel w3-center w3-opacity" style="font-weight: bold;"> Video </h1>
+				<div id="iframe-video" class="w3-center w3-row">
+
+					<iframe class="w3-row" width="75%" height="500px" src="https://www.youtube.com/embed/NltNl7_1uHs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+				</div>
+			</div>
+		</div>
+		<div id="paper-link" class="w3-row w3-border-bottom">
+			<h1 class="w3-panel w3-center w3-opacity" style="font-weight: bold;"> Paper </h1>
+			<div id="paper-image" class="w3-center">
+				<img width="271px" height="356px" src="images/position/paper_image.jpg" class="w3-image" /> <br>
+				<a class="w3-text-teal" href="pdfs/mig2017.pdf">PDF</a>
+
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-64  w3-center w3-large">
+
+	<!-- 			<p>Done by <a href="" target="_blank" class="w3-hover-text-green">Muhammed</a></p>
+		-->
+		</footer>
+	</div>
+</body>
+
+</html>
