@@ -67,6 +67,54 @@
 	color: white;
 	}
 
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 	</style>
 
 	<script>
@@ -90,7 +138,16 @@
 			<div class="topnav">
 				<a class="active" href="#home">Home</a>
 				<a href="#research">Research</a>
-				<a href="classes/it360/index.html">Teaching</a>
+				<div class="dropdown">
+					<button class="dropbtn">Teaching 
+					<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					<a href="https://canvas.njit.edu/">IT 201</a>
+					<a href="classes/is485/index.html">IS / CS 485</a>
+					</div>
+				</div> 
+
 				<a href=""> </a>
 			</div>
 
@@ -178,8 +235,7 @@ New Jersey Institute of Technology</h3>
 	  <p>
        	    <img border="0" width="32" height="12" id="_x0000_i1094" src="images/Home/new_tag.gif">
 	     <span>
-		<b>I am teaching IT 360: Programming for Computer Graphics in Fall 2022. Check the course
-         website <a class="w3-text-teal" href="classes/it360/index.html">here</a>.</b>
+		  I am teaching IT 201, and IS485: AI for Artifical Worlds in Spring 2023.
 	     </span>
       </p>
 
@@ -324,7 +380,9 @@ for Pure & Applied Mathematics: Social Dynamics beyond Vehicle Autonomy</a>.
 					ACM SIGGRAPH Asia Conference Proceedings, 2022 <br>
 					  </a></p><br>
 				<div id="link-btns">
+				
 				<a id="btn-a" href="https://arxiv.org/abs/2202.00185" class="w3-button w3-teal w3-round-xlarge">PDF</a>
+				<a id="btn-a" href="https://www.youtube.com/watch?v=u0Yfi5Rh7N4" class="w3-button w3-teal w3-round-xlarge">Video</a>
 				</div>
 			  </div>
 			</div>
