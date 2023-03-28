@@ -1,0 +1,303 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>CS-IS 485 Final Project</title>
+</head>
+
+
+<body>
+
+<center>
+<h2>Final Project</h2>
+</center>
+
+<blockquote>
+<table cellpadding="10">
+<tbody><tr>
+<td><img src="project_files/logo.jpg" alt="[A" picture="" ]="" align="left"></td>
+<td width="80%">
+<hr>
+<h2>Final Project: Your Own Graphics Project</h2>
+<p>
+</p><hr></td></tr>
+</tbody></table>
+
+<h3>Project Description</h3>
+
+<p>
+
+For the final project, you get to pick a project that appeals to you. 
+You also may work in teams of up to 2 people.  It will be up to you to 
+form teams and to choose a project. The first deliverable is your 
+project proposal, which I will provide feedback on (i.e. it is either 
+too simple or too ambitious and perhaps suggest alternatives in these 
+cases). These suggestions should be implemented for the final project to
+ receive full credit.  You should tell us what you want to do, what your
+ strategy is for accomplishing it, what your strategy is to make sure 
+you have something to turn in even if you don't get everything working, 
+and who will be doing which parts if you are in a team.
+
+</p><p>
+
+The project you choose should be ambitious enough to
+demonstrate a significant result, but not so hard that you aren't
+confident about shipping a reasonably complete product.  Several
+project ideas are given below, you can choose one of these or feel
+free to come up with your own idea. Note that some of these projects
+are quite challenging, especially for one person, and others are not.
+If you are not sure how you would approch implmenting the project, it
+is probably best to choose something else.  You can leaf through <a href="http://portal.acm.org/toc.cfm?id=SERIES382&amp;type=series"> recent
+SIGGRAPH proceedings on ACM</a> for additional inspiration.  </p><p>
+Please note that we expect a more ambitious project from a team than
+we do if you're working alone.
+
+</p><h3>Some Project Ideas</h3>
+
+<p>Note that some of the pictures below don't correspond to the <i>algorithm</i>
+suggested, though they all depict the <i>idea</i> described.
+
+</p><h4>Artificial Intelligence</h4>
+
+<table>
+<tbody>
+
+
+<tr>
+<td valign="top" align="right"><img src="project_files/pbd.jpg" width="140" height="159" border="0"></td>
+
+<td><b>Position-based Dynamics</b>.&nbsp; 
+Extend the position-based dynamics framework with new constraint(s) 
+The new constraints can simulate anything - cloth, crowds, and other physics or AI effects. 
+Demonstrate the new constraint with at least 4 simulations that shows that it works in different cases. 
+Note that the constraint should not be something we already saw in class.
+See this PBD <a href="http://animation.rwth-aachen.de/media/papers/2017-EG-CourseNotes.pdf">survey paper</a> for ideas.</td></tr>
+
+
+<tr>
+<td valign="top" align="right"><img src="project_files/genetic.jpg" width="140" height="132"></td>
+
+<td><b>Genetic Algorithms.</b>
+In the class we saw several use cases for GA, ranging from flight simulators to solving core CS problems.
+Use GA to solve an interesting animation or simulation problem. This could be build on any topic that 
+we saw in class.</td>
+</tr>
+
+
+
+<tr>
+<td valign="top" align="right"><img src="project_files/astar.jpg" width="140" height="159" border="0"></td>
+
+<td><b>Path Planning</b>.&nbsp; Implement a path planner for ThreeJS.
+The path planner should be interactive, running interacively for crowds of 100+ agents. 
+It should support walls, columns and other non-standard shaped obstacles.
+In addition, it should support interactive placement of obstacles, and or openings, such 
+as user opening a door in a room.</td></tr>
+
+
+<tr>
+<td valign="top" align="right"><img src="project_files/fps.png" width="140" height="159" border="0"></td>
+
+<td><b>First-Person View Simulator</b>.&nbsp; Create a simulator 
+for an first person experience, such as driving a car or walking in a building. 
+The simulation would be interactivly generated, 
+where the user or an AI controls the FPS-like view. 
+Think of this as a platform for training autonomous systems 
+to drive or locomote in a building. 
+The more realistic the enviroment, the better.
+ This idea is decribed in more detail in <a href="https://www.youtube.com/watch?v=3DMZETkPieI"> this video</a>. </td></tr>
+
+
+
+
+</tr></tbody></table>
+
+
+
+<h4>Geometric modeling</h4>
+
+<table>
+<tbody>
+
+<tr><td valign="top" align="right"><img src="project_files/landscape.jpg" width="140" height="159" border="0">
+</td><td><b>Infinite Procedural Landscapes</b>.
+Noise is important in virtual worlds for multiple modeling purposes.
+As a final project, implement a tool to create landscapes: valleys, 
+hills, mountains. Your implementation should be using 
+noise to generate suh landscapes. 
+Consider also to add trees, lakes, roads, and overlay 
+different textures and colors to visualize the different parts.  
+You can start from 
+<a href="https://www.youtube.com/watch?v=hHGshzIXFWY&list=PLRL3Z3lpLmH3PNGZuDNf2WXnLTHpN9hXy">this video series</a>.
+See existing github  
+<a href="https://github.com/simondevyoutube/ProceduralTerrain_Part3">repo</a>, and 
+others available by this author.
+
+
+<tr><td valign="top" align="right"><img src="project_files/teddy.jpg">
+</td><td><b>Sketch interface for modeling</b>.
+<a href="http://www-ui.is.s.u-tokyo.ac.jp/%7Etakeo/teddy/teddy.htm">Teddy</a>
+ is a sensational system introduced in SIGGRAPH''99 and presents a new 
+paradigm for modeling.
+In Teddy, users sketch in a drawing window and the system automatically 
+infers the underlying
+3D model reasonably. As a final project, you can design your own 
+interface for modeling
+or follow Teddy's design (you are not required to implement all 
+operations introduced in the paper).  You may also want to take a look 
+at
+<a href="http://www-ui.is.s.u-tokyo.ac.jp/%7Etakeo/java/smoothteddy/index.html">SmoothTeddy</a>, the follow-up to Teddy.
+A good starting point is this 
+ThreeJs <a href="https://cs.wellesley.edu/~cs307/threejs/demos-s21-r95/BasicModeling/TeddyBear.shtml">repo</a>.
+</td></tr>
+
+<tr><td valign="top" align="right"><img src="project_files/curve.jpg" width="140">
+</td><td><b>Multi-resolution curves</b>.  Create a
+system which can edit curves at different levels of detal.  The curves should be generated 
+by a mathematical function(s), similar to this <a href="https://www.desmos.com/calculator">website</a>.
+Devise a scheme which can interpolate at non-integer levels of detail.  There is a paper by 
+<a href="http://portal.acm.org/citation.cfm?id=192223">Finkelstein
+and Salesin</a> on multiresolution curves.
+Here is a <a href="hhttps://observablehq.com/@grantcuster/using-three-js-for-2d-data-visualization">guide</a> on setting up ThreeJS for 2D.
+</td></tr>
+
+<tr><td valign="top" align="right"><img src="project_files/tree.jpg" width="140"></td>
+<td><b>Shape Generation.</b> Use L-Systems or similar algorithms to create 
+dynamics shapes. One example could be a  
+<a href="https://github.com/FrancescoGradi/L-System-Trees">tree</a> 
+built using L-system rules 
+<a href="https://www.youtube.com/watch?v=feNVBEPXAcE">(video)</a>.
+Another example could be a starship, skyscrapper, or other 2D/3D shape.
+</td></tr>
+
+
+
+
+<tr><td valign="top" align="right"><img src="project_files/cityscape.jpg" width="140"></td>
+<td><b>Procedural architecture and cities.</b> Design a general L-system
+for modeling buildings (simple structure and image-based facades) and
+cityscapes.  Explore ways of parameterizing the buildings by attributes
+such as age, style, and location. <ahref ="http:="" www.cg.inf.ethz.ch="" downloads="" publications="" papers="" 2001="" p_par01.pdf"="">This
+SIGGRAPH '01 paper by <a href="http://portal.acm.org/citation.cfm?id=383259.383292">Parish and Muller</a> can be used as a guide.</ahref>
+Open-source <a href="https://github.com/Aljullu/threejs-procedural-building-generator">repos</a>  may help. </td></tr>
+</tbody></table>
+
+<h4>Animation</h4>
+
+<table>
+
+<tbody><tr><td valign="top" align="right"><img src="project_files/mainmick.gif" width="160"> </td><td><b>Cartoon
+physics simulation.</b> Design a simulation environment that would
+model various aspects of cartoon physics. Augment the traditional
+simulation of Newtonian physics with additional constraints,
+damping parameters and other modifications which would produce an
+exaggerated cartoon-like behavior.
+
+</td></tr><tr><td valign="top" align="right"><img src="project_files/squat2.JPG" height="160"> </td><td><b>Inverse
+kinematics.</b> Implement inverse kinematics for character
+modeling and animation.  Given a sequence of trajectories for a
+few end-effectors on the character's body construct the
+character's joint angle which would interpolate the end-effector
+trajectories while ensuring that the character moves "naturally".
+See lecture on inverse kinematics for details.  There is a section
+on IK in the <a href="http://www.cs.washington.edu/education/courses/558/00sp/lectures/index.html">CSE558 course notes</a> from the University of Washington.
+
+</td></tr><tr><td valign="top" align="right"><img src="project_files/11459277.jpg" width="160"> </td><td><b>Cloth
+Simulator.</b> Design a realistic cloth simulation system. Your work can focus on <a href="http://graphics.snu.ac.kr/%7Ekjchoi/publication/cloth.pdf">stable
+    and accurate cloth simulation</a>, <a href="http://www.graphics.stanford.edu/papers/cloth-sig02/">handling
+    of collisions in a reliable manner</a>, and/or modeling of various kinds of
+    cloth such as wool, cotton, or silk.
+
+</td></tr><tr><td valign="top" align="right"><img src="project_files/MSH_eruption.jpg" width="160">
+</td><td><b>Fracture, Explosion simulation.</b> Develop an system approach to
+modeling and rendering realistic explosions (fire, dust 
+<a href="https://garrongarron.github.io/explosion-threejs/">plums</a>, 
+etc.) and/or fractures. 
+Simulate fractures happening upon a user interaction (mouse click). 
+See <a href="https://www.airtightinteractive.com/2010/07/three-js-experiment-cube-explosion/">this</a>
+to get you started.
+</td></tr>
+
+
+<tr><td valign="top" align="right"><img src="project_files/babyfalls2.jpg" width="160">
+</td><td><b>Fluid Simulation.</b> Simulate smoke or fluids with PBD (or other techniques).
+Whitewater rapids like in the image is the default option, 
+but you don't have to simulate water -- it can be anything fluid or smoke like, e.g. honey, oil. 
+Note that there are many demos and resources online on how to do this with Javascript, 
+for example <a href="https://bobingstern.github.io/SPH-JS/">this</a>
+or <a href="http://david.li/fluid/">this</a> or 
+<a href="https://www.youtube.com/watch?v=pxP5A4ndywg">this</a> .
+</td></tr>
+
+
+<tr><td valign="top" align="right"><img src="project_files/crowd.jpg" width="160"></td>
+<td><b>Crowds and cars.</b>  Design a model of pedestrian crowds and/or vehicular rush-hour
+traffic.  The crowd model should be parameterized by the number of
+people, demographics (age, size, etc), and general direction.  The
+pedestrians should exhibit some variations in behavior as well (speed,
+interacting with others, etc.). 
+Vehicular traffic can be parameterized by time of day, volume, source
+and destination.  In either case, intersections between people and/or
+crowds must be avoided.
+Consider adding a GUI for controlling the simulation interactively. 
+</td></tr>
+
+
+</tbody></table>
+
+
+<div id="projectproposal">
+<h3>Project Proposal</h3>
+
+<p>
+Submit a short project proposal explaining what you are planning to do, 
+what you hope to learn from your project, and describe the results or 
+artifact you intend to produce. The proposal does not need to be long, 
+it should be 1--4 paragraphs max. Link to the proposal will be provided.
+
+</p><p>
+If you are working in a team, list the team members and what each person
+ is going to work on (each team member should be responsible for part of
+ the project). It is expected that a team will pursue a more ambitious 
+project than a single person.  Each team only needs to submit 1 report.
+</p></div>
+
+<h3>Submission Instructions</h3>
+Implement your project proposal with <a href="https://threejs.org/">ThreeJS</a>.
+Submit your results as a blog post(s) and provide a link to it via 
+Canvas. 
+The blog will contain a GitHub/GitLab repo link -- 
+make sure to keep your repository private and give access to the instructor 
+(GitHub/GitLab usernames will be posted to Announcements on Canvas). 
+	
+<p>In addition to your complete source code, the project should include:
+</p><ul>
+<li>A blog post(s) post summarizing your ThreeJS project, with images.</li>
+<li>A README file including your name (and your partner's name), and 
+instructions as to how to run your code.</li>
+<li>A link to your presentation slides providing:
+	<ol>
+		<li>the necessary background to understand your project</li>
+		<li>a description of what you accomplished</li>
+		<li>the artifact(s) you produced</li>
+		<li>a list of references (does not need to be MLA but make sure the all necessary information to find the reference is there)</li></ol>
+		<li>enumerated list of any libraries or packages you used.</li></ol>
+</li>
+</ul>
+
+Building on existing open source Javascript and ThreeJS repos is allowed, BUT if you copy a repsoitory 
+as-is and claim it to be your implementation, you will get non-passing grade. 
+<br>
+The technical slides does not need to be conference caliber, but they should be neat, with many images, videos, 
+and technically competent, easy to read.
+<br>
+No late submissions allowed, in class presentations are mandatory. 
+
+<hr>
+
+<i><font size="-1">Last modified: 03/28/23</font>
+<font size="-1">by Tomer Weiss <a href="mailto:first.last@njit.edu">
+first.last@njit.edu</a></font></i>
+
+
+
+</blockquote>
+</body></html>
