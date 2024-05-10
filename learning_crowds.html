@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html><style><br>                ddg-runtime-checks {<br>                    display: none;<br>                }<br>            </style><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Fast Position-Based Multi-Agent Group Dynamics </title>
+	<meta name="author" content="Tomer Weiss">
+<meta property="og:image" content="modes-vs-modes.jpg">
+<meta property="og:description" content="...">
+<meta name="twitter:card" content="summary">
+<meta name="og:title" content="Learning Crowd Motion Dynamics with Crowds">
+	<link type="text/css" rel="stylesheet" href="learning_crowds_files/style.css">
+<style>
+	.authors {line-height:5px;}
+</style></head>
+
+<body>
+
+<h1 id="">Learning Crowd Motion Dynamics with Crowds<em> ACM SIGGRAPH I3D 2024</em></h1>
+<div class="authors">
+<p>BILAS TALUKDAR, YUNHAO ZHANG, TOMER WEISS<sup>1</sup></p>
+<center><p><sup>1</sup>New Jersey Institute of Technology</center>
+</div>
+
+
+
+<figure>
+<div style="display: flex; justify-content: space-between;" >
+   <img  width=99.5%  src="learning_crowds_files/teaser_new_1.png" alt="">
+</div>
+<p></p>
+We propose a novel crowd-sourced approach for simulating crowds with deep reinforcement learning. Most notably, we use Bayesian inference for learning optimal policy parameters for crowd simulation dynamics.
+</figure>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>Reinforcement Learning (RL) has become a popular framework for learning desired behaviors for computational agents in graphics and games. In a multi-agent crowd, one major goal is for agents to avoid collisions while navigating in a dynamic environment. Another goal is to simulate natural-looking crowds, which is difficult to define due to the ambiguity as to what is a natural crowd motion. We introduce a novel methodology for simulating crowds, which learns most-preferred crowd simulation behaviors from crowd-sourced votes via Bayesian optimization. Our method uses deep reinforcement learning for simulating crowds, where crowd- sourcing is used to select policy hyper-parameters. Training agents with such parameters results in a crowd simulation that is preferred to users. We demonstrate our method’s robustness in multiple scenarios and metrics, where we show it is superior compared to alternate policies and prior work.</p>
+
+<h2 id="downloads">Downloads</h2>
+
+<ul>
+<li><a href="https://drive.google.com/file/d/1jTmzb7RPWDNZlbPmIjv-zBcklWmb2Z8Z/view?usp=sharing">Paper (author's version) </a></li>
+<li><a href="">Paper</a></li>
+<li><a href="https://www.youtube.com/watch?v=SLAd9XouFFU">Video</a></li>
+<li><a href="">Long Talk</a></li>
+<li><a href="">Code</a></li>
+</ul>
+
+
+<h2 id="bibtex">BibTeX</h2>
+
+<pre><code>@article{talukdar:crowds:2024,
+title = {Learning Crowd Motion Dynamics with Crowds},
+author = {Talukdar, Bilas and Zhang, Yunhao and Weiss, Tomer},
+year = {2024},
+journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+volume = {7},
+number = {1},
+}
+</code></pre>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<p>This project was funded in part by NJIT-BGU research seed grant.</p>
+
+<h2 id="acknowledgements">More Results</h2>
+
+<figure>
+   <div style="display: flex; text-align:center; justify-content: space-between; padding:2px 0;" >
+      <img  width=19% src="learning_crowds_files/Corridor_Ours_new_2b.jpg" alt="">
+      <img  width=19%  src="learning_crowds_files/Corridor_baseline_new_1b.jpg" alt="">
+      <img  width=19%  src="learning_crowds_files/Corridor_ORCA_new_1b.jpg" alt="">
+      <img  width=19% src="learning_crowds_files/Corridor_social_forces_new_1b.jpg" alt="">
+      <img  width=19%  src="learning_crowds_files/Corridor_PLEdestrians_new_1b.jpg" alt="">
+      </div>
+   </div>
+<div style="display: flex; text-align:center; justify-content: space-between; padding:2px 0;" >
+   <img  width=19% src="learning_crowds_files/halllway_with_acc_with-PBD_20_agents-Ours_v2_1a.jpg" alt="">
+   <img  width=19%  src="learning_crowds_files/hallway_without_acc_without_pbd_Baseline.jpg" alt="">
+   <img  width=19%  src="learning_crowds_files/halllway_with_acc_with-ORCA_20_new_1a.jpg" alt="">
+   <img  width=19% src="learning_crowds_files/halllway_with_acc_with-SocialForces_LowV0_v1_1_new_1a.jpg" alt="">
+   <img  width=19%  src="learning_crowds_files/halllway_with_acc_with-PLEdestrians_20_new_1a.jpg" alt="">
+   </div>
+</div>
+<div style="display: flex;  justify-content: space-between; padding:2px 0;" >
+   <img  width=19% src="learning_crowds_files/Circle_Ours_42_Agents_Newer_latest_trying_1b.jpg" alt="">
+   <img  width=19%  src="learning_crowds_files/cir_baseline_new_1a.jpg" alt="">
+   <img  width=19%  src="learning_crowds_files/Circle_ORCA_42_Agents_Newer_latest_trying_1b.jpg" alt="">
+   <img  width=19% src="learning_crowds_files/Circle_Social_Forces_42_Agents_Newer_latest_trying_1b.jpg" alt="">
+   <img  width=19%  src="learning_crowds_files/Circle_PLEDestrians_42_Agents_Newer_latest_trying_1b.jpg" alt="">
+</div>
+<div style="display: flex;  justify-content: space-between; padding:2px 0;" >
+   <figure width="20%"> Our Method </figure>
+   <figure width="20%"> Baseline </figure>
+   <figure width="20%"> ORCA </figure>
+   <figure width="20%"> Social Force </figure>
+   <figure width="20%"> PLEdestrians </figure>
+</div>
+Comparing Simulation Trajectories. To better understand our method’s performance, we visualized the trajectories of our method in a corridor, hallway, and circle environments. A baseline Reinforcement Learning work [Lee et al. 2018], ORCA, Social force, and PLEdestrians. See our paper for an analysis.
+</figure>
+
+
+
+</body></html>
