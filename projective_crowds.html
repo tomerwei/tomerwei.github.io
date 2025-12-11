@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html><style><br>                ddg-runtime-checks {<br>                    display: none;<br>                }<br>            </style><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Fast Position-Based Multi-Agent Group Dynamics </title>
+	<meta name="author" content="Tomer Weiss">
+<meta property="og:image" content="modes-vs-modes.jpg">
+<meta property="og:description" content="...">
+<meta name="twitter:card" content="summary">
+<meta name="og:title" content="Learning Crowd Motion Dynamics with Crowds">
+	<link type="text/css" rel="stylesheet" href="projective_crowds_files/style.css">
+<style>
+	.authors {line-height:5px;}
+
+    .arrow{
+      stroke:rgb(0,0,0);
+      stroke-width:2; 
+      marker-end:url(#markerArrow)
+    }
+  
+</style></head>
+
+<body>
+
+<h1 id="">Projective Multi-Agent Dynamics <em> ACM SIGGRAPH Motion, Interaction, and Games (MIG) 2025</em></h1>
+<div class="authors">
+<p>TOMER WEISS<sup>1</sup></p>
+<center><p><sup>1</sup>New Jersey Institute of Technology</center>
+</div>
+
+
+
+<figure>
+<div style="display: flex; justify-content: space-between;" >
+   <img  width=99.5%  src="projective_crowds_files/teaser_new_3.png" alt="">
+</div>
+<p></p>
+We propose a novel crowd-sourced approach for simulating crowds with projective dynamics. Notably, our method is flexible and produces emergent crowd behavior without user intervention, such as groups of agents seamlessly passing each other and the spontaneous formation of proxemic group behaviors.
+</figure>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>We introduce a crowd simulation method that uses a block coordinate descent solver reminiscent of projective dynamics approaches. Existing projective dynamics work focuses on simulating deformable materials, which makes us the first to incorporate crowds into such a framework. We simulate agents as nodes in a mass-spring system, where springs are created dynamically to represent different crowd phenomena. We propose novel projective solutions for these springs to emulate time-to-collision avoidance behaviors. Our method captures the collective response of the crowd using implicit Euler integration, while a conjugate gradient solver efficiently resolves the resulting mass-spring linear system, enabling the simulation of large-scale, emergent crowd behaviors.</p>
+
+<h2 id="downloads">Downloads</h2>
+
+<ul>
+<li><a href="https://drive.google.com/file/d/1jJ-tPlt-jAojMA_mXhEg56cAKOP1YVs7/view?usp=sharing">Paper (author's version) </a></li>
+<li><a href="https://dl.acm.org/doi/full/10.1145/3769047.3769065">Paper</a></li>
+<li><a href="https://youtu.be/4rAm7vTb6RA">Video</a></li>
+<li><a href="">Long Talk</a></li>
+</ul>
+
+
+<h2 id="bibtex">BibTeX</h2>
+
+<pre><code> 
+@inproceedings{weiss:mig:2025,
+author = {Weiss, Tomer},
+title = {Projective Multi-Agent Dynamics},
+year = {2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+doi = {10.1145/3769047.3769065},
+booktitle = {Proceedings of the 2025 18th ACM SIGGRAPH Conference on Motion, Interaction, and Games},
+articleno = {19},
+numpages = {8},
+series = {MIG '25}
+}
+</code></pre>
+
+<h2 id="acknowledgements">More Results</h2>
+<figure>
+<div style="display: flex; text-align:center; justify-content: space-between; padding:2px 0;" >
+   <img  width=24% src="projective_crowds_files/ortho/image_037_0552.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/ortho/image_037_1038.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/ortho/image_037_1323.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/ortho/image_037_1635.jpg" alt="">
+</div>
+<div style="display: flex;  justify-content: space-between; padding:2px 0;" >
+   <img  width=24% src="projective_crowds_files/overtake/image_040_0399.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/overtake/image_040_0495.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/overtake/image_040_0655.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/overtake/image_040_0942.jpg" alt="">
+</div>
+<div style="display: flex;  justify-content: space-between; padding:2px 0;" >
+   <img  width=24% src="projective_crowds_files/passing_512/image_052_0247.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/passing_512/image_052_0774.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/passing_512/image_052_1758.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/passing_512/image_052_6069.jpg" alt="">
+</div>
+<div style="display: flex; text-align:center; justify-content: space-between; padding:2px 0;" >
+   <img  width=24% src="projective_crowds_files/hallway/image_056_0272.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/hallway/image_056_0399.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/hallway/image_056_0601.jpg" alt="">
+   <img  width=24% src="projective_crowds_files/hallway/image_056_0846.jpg" alt="">
+</div>
+  <svg height="30" width="840">
+    <defs>
+        <marker id="markerArrow" markerWidth="13" markerHeight="13" refX="2" refY="6"
+               orient="auto">
+            <path d="M2,2 L2,11 L10,6 L2,2" style="fill: #000000;" />
+        </marker>
+    </defs>
+    
+    <line x1="5" y1="15" x2="815" y2="15" class="arrow" />
+  </svg><br>
+Crowd simulation scenarios. To better understand our method's performance, we visualized it in several scenarios, including two orthogonally crossing groups, one group of agents overtaking another, two groups of agents passing each other, and an opposing-flows hallway setting (from top to bottom). We compared our results with a baseline physics-based approach [Karamouzas et al. 2014]. See our paper for further analysis and comparison.
+</figure>
+
+
+
+</body></html>
